@@ -1,5 +1,5 @@
 public class Player {
-    String namePlayer = "HORNIE HIPPO 2711";
+    String namePlayer = "Saferi6699";
     int x;
     int y;
     int health = 100;
@@ -15,22 +15,22 @@ public class Player {
     }
     public void moveRight(){
         x = x + speed;
-        System.out.println(namePlayer + " bergerak ke kanan\nX : " + x + "\nY : " + y);
+        System.out.println(namePlayer + " bergerak ke kanan\nX : " + x);
     }
     public void moveLeft(){
         x = x - speed;
-        System.out.println(namePlayer + " bergerak ke kiri\nX : " + x + "\nY : " + y);
+        System.out.println(namePlayer + " bergerak ke kiri\nX : " + x);
     }
     public void moveUp(){
         y = y + speed;
-        System.out.println(namePlayer + " bergerak ke atas\nX : " + x + "\nY : " + y);
+        System.out.println(namePlayer + " bergerak ke atas\nY : " + y);
     }
     public void moveDown(){
         y = y - speed;      
-        System.out.println(namePlayer + " bergerak ke bawah\nX : " + x + "\nY : " + y);
+        System.out.println(namePlayer + " bergerak ke bawah\nY : " + y);
     }
     public int attack(){
-        System.out.println("Player mengeluarkan damage : " + attack + " Damage");
+        System.out.println("Player memberi damage : " + attack + " Damage");
         return attack;
     }
     public void getDamage(int health, int defense){
@@ -42,13 +42,13 @@ public class Player {
     }
     public void getPower(){
         attack = attack + 5;
-        System.out.println("Player mendapatkan penambahan attack sebanyak : 5");
+        System.out.println("Player mendapatkan buff attack sebanyak : 5");
         System.out.println("Total attack player : " + attack);
     }
     public void dash(int speed){
         this.speed = speed;
-        System.out.println("Player melakukan dash");
-        System.out.println("Speed player menjadi : "+ this.speed);
+        System.out.println("Player dash");
+        System.out.println("Speed player : "+ this.speed);
     }
     public void isDead(){
         health = 0;
@@ -65,22 +65,22 @@ public class Player {
         if (useSkill == true) {
             if (firstSkill == true){
                 attack = 4;
-                System.out.println("Player menggunakan skill pertama dengan attack = " + attack);
+                System.out.println("Player menggunakan skill 1 dengan attack = " + attack);
             }
         }
         else {
-            System.out.println("Skill satu masih Cooldown");
+            System.out.println("Skill 1 Cooldown");
         }
     }
     public void secondSkill(boolean useSkill){
         if (useSkill == true) {
             if (secondSkill == true){
                 attack = 7;
-                System.out.println("Player menggunakan skill kedua dengan attack = " + attack);
+                System.out.println("Player menggunakan skill 2 dengan attack = " + attack);
             }
         }
         else {
-            System.out.println("Skill kedua masih Cooldown");
+            System.out.println("Skill 2 Cooldown");
         }
     }
     public void ultimateSkill(boolean useSkill){
@@ -91,7 +91,7 @@ public class Player {
             }
         }
         else {
-            System.out.println("Ultimate Skill masih Cooldown");
+            System.out.println("Ultimate Skill Cooldown");
         }
     }
 
